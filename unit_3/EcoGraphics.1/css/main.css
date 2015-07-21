@@ -113,6 +113,11 @@ body {
 
 /* HEADER ********************************/
 
+p, a {
+    font-family: 'Magra', sans-serif;
+}
+
+
 .globe {
     width: 100px;
     margin: 0 20px
@@ -121,6 +126,8 @@ body {
 h1 {
     padding: 10px 145px 0 0;
     margin: 0;
+    font-family:'Prosto One', cursive;
+
 }
 
 .title {
