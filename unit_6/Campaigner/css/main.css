@@ -1,0 +1,189 @@
+/*** FONT ****/
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+/***** HEADER *****/
+
+.logo {
+    width: 400px;
+    display: inline-block;
+    float: left;
+}
+
+.main-nav {
+    background-color: #fff;
+    display:inline-block;
+    font-size: 18px;
+    width: 300px;
+    margin: 10px 0 10px 10%;
+}
+
+.main-nav a {
+    width: 100px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    disply: inline-block;
+    float: left;
+    padding: 10px 0;
+}
+
+.main-nav a:hover {
+    color: royalblue;
+}
+
+.right {
+    background-color: #fff;
+    display: inline-block;
+    width: 100px;
+    float: right;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.right a {
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    margin: 5px 10px 5px 0;
+}
+
+.sub {
+    background: orange;
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+.search {
+    background: #ddd;
+    width: 90px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+/****** LINKS **********/
+
+a:hover {
+    color:aqua;
+}
+
+a.selected {
+  text-decoration: underline;
+    color: orange;
+}
+  
+
+/******* FRONT PAGE *********/
+
+.sect {
+    color: white;
+    padding: 5% 20%;
+    margin: 10px;
+    background-image: url(../img/city.png);
+    background-size: cover;
+    max-width: 900px;
+}
+
+.trending {
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    border: white solid 2px;
+    border-radius: 5px;
+}
+
+h1 {
+    padding: 5px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px 5%;
+}
+
+h2 {
+    margin: 40 0 0 20%
+}
+
+.teaser {
+    padding: 5px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 5px;
+}
+
+/***** COLUMN TOPS ******/
+
+.column-tops {
+    float: left;
+    color: black;
+     box-sizing: border-box;
+    width: 20%;
+    padding: 5px 5px;
+    margin:  40px 6.6666% 5px;
+    text-align: center;
+    border: black solid 2px;
+    border-radius: 5px;
+}
+
+/*** ARTICLE COLUMNS ******/
+
+.column {
+    box-sizing: border-box;
+    width: 32%;
+    padding: 5%;
+    margin: 0.66666%;
+    color: white;
+    background-size: cover;
+}
+
+#column-1 {
+    float: left;
+    background-image: url(../img/obey1.jpg);
+}
+
+#column-2 {
+    float: left;
+    background-image: url(../img/obey2.jpg);
+}
+
+#column-3 {
+    float: right;
+    background-image: url(../img/obey3.jpg);
+}
+    
+.background {
+    
+}
+
+/********** PIC PAGE *********/
+
+.pic {
+    width: 30%;
+    display: inline-block;
+    float: right;
+    margin: 20 7% 20 3%;
+    padding: 0;
+}
+
+.article {
+    width: 50%;
+    display: inline-block;
+    margin: 20 3% 20 7%;
+    padding: 0;
+}
+
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 15px 0 50px;
+}
+
