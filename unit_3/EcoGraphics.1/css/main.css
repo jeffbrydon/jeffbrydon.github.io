@@ -95,58 +95,107 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
 
 /* COLORS ********************************/
 
 body {
-    background-color: #ccece6;
+    color: #24672b;
 }
 
 /* TEXT STYLES **************************/
 
 .mission {
     font-style: italic;
-    text-align: center;
-    margin: 20px;
+    padding-bottom: 5px;
+    margin: 0 0 0 112px;
+    font-size: 0.9em;
 }
 
 
 /* HEADER ********************************/
 
+header {
+    background-color: rgba(187, 224, 255, 0.44);
+    display: block;
+    height: 120px;
+}
+
+nav {
+    display: inline-block;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+nav a {
+    margin: 40px 10px 0 0;
+    padding: 5px;
+    display: inline-block;
+    color: #24672b;
+    font-size: 1.2em;
+    border: 2px solid rgba(187, 224, 255, 0);
+    border-radius: 10px;
+}
+
+nav a:hover {
+    border: 2px solid #24672b;
+}
+
+nav a:active {
+    font-size: 1.3em;
+}
+
+nav a:visited {
+    color: #24672b;
+    text-decoration: underline;
+}
+
 p, a {
     font-family: 'Magra', sans-serif;
 }
 
-
 .globe {
-    width: 100px;
+    width: 75px;
     margin: 0 20px
 }
 
 h1 {
-    padding: 10px 145px 0 0;
+    font-size: 3.2em;
+    padding: 10px 0 0 0;
     margin: 0;
     font-family:'Prosto One', cursive;
-
 }
 
 .title {
-    font-size: 2em;
-    text-align: center
+    display: inline-block;
+    float: left;
+    width: 50%;
 }
 
-.animals {
-    height: 200px;
-    border-radius: 5px;
+#gallery {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+#gallery li {
+  width: 45%;
+  float: left;
+  margin: 2.5%;
+    
 }
 
-.description {
-    margin: 5%;
-    padding: 5px;
-    background-color: #b3e2cd;
-    border: 1px solid #55ac8f;
-    border-radius: 5px;
-    box-shadow: 0 2px 0 -1px rgba(0, 0, 0, 0.69);
+#gallery img {
+    padding: 10px; 
+    width: 100%;
+    border: 2px solid #888;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .contact {
@@ -158,8 +207,79 @@ h1 {
     list-style: none;
 }
 
+/************ Responsive iPad ********/
 
 
+@media screen and (max-width: 950px) {
+    
+    .title {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 auto 0 -30px;
+        text-align: center;
+    }
+    
+    header {
+        height: 180px;
+    }
+    
+    nav {
+        display: block;
+        float: none;
+        margin: 20px auto 10px;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    nav a {
+        margin: 0;
+    }
+    
+    #gallery li {
+      width: 90%;
+      margin: 0 5%;
+      float: left;
+    }
+}
+
+/********* Responsive iPhone ************/
+
+@media screen and (max-width: 520px) {
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    .globe {
+        width: 45px
+    }
+    
+    .mission {
+        margin: 0 auto;
+        padding: 0;
+        width: 200px
+    }
+    
+    nav a {
+        font-size: 1em;
+        margin: 10px;
+        border: 2px solid #24672b;
+    }
+}
+
+
+
+
+/*********** Clearfix ***********/
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
 
 
 /* ==========================================================================
