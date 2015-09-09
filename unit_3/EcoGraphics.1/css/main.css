@@ -120,7 +120,7 @@ body {
 /* HEADER ********************************/
 
 header {
-    background-color: rgba(187, 224, 255, 0.44);
+    background: linear-gradient(135deg, #f8f1b4, #ffc14c);
     display: block;
     height: 120px;
 }
@@ -140,6 +140,7 @@ nav a {
     font-size: 1.2em;
     border: 2px solid rgba(187, 224, 255, 0);
     border-radius: 10px;
+    background: rgba(255,255,255,0.3);
 }
 
 nav a:hover {
@@ -150,14 +151,12 @@ nav a:active {
     font-size: 1.3em;
 }
 
-nav a:visited {
-    color: #24672b;
-    text-decoration: underline;
-}
 
 p, a {
     font-family: 'Magra', sans-serif;
+    color: #24672b;
 }
+
 
 .globe {
     width: 75px;
@@ -182,29 +181,50 @@ h1 {
       padding: 0;
       list-style: none;
     }
-    
+
 #gallery li {
+  display: inline-block;
   width: 45%;
   float: left;
-  margin: 2.5%;
-    
+  margin: 2.5%; 
+}
+
+#gallery p {
+    margin: 0px 10px 0 0;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    background: #fce59a;
+    border: 2px solid rgba(187, 224, 255, 0);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+#gallery p:hover {
+    border: 2px solid #24672b;
+    border-radius: 10px;
 }
 
 #gallery img {
     padding: 10px; 
     width: 100%;
-    border: 2px solid #888;
-    border-radius: 10px;
-    box-sizing: border-box;
+
 }
 
 .contact {
     padding-left: 40px;
-    text-decoration: underline
+    text-decoration: none;
 }
 
 .list {
     list-style: none;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background: linear-gradient(135deg, #f8f1b4, #ffc14c);
 }
 
 /************ Responsive iPad ********/
@@ -238,7 +258,7 @@ h1 {
     
     #gallery li {
       width: 90%;
-      margin: 0 5%;
+      margin: 20px 5%;
       float: left;
     }
 }
@@ -266,6 +286,10 @@ h1 {
         margin: 10px;
         border: 2px solid #24672b;
     }
+}
+
+a {
+    text-decoration: none;
 }
 
 
